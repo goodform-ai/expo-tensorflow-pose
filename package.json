@@ -1,7 +1,7 @@
 {
   "name": "pose-mobile",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "src/index.ts",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -14,14 +14,24 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
+    "@mediapipe/pose": "^0.4.0",
+    "@react-native-async-storage/async-storage": "^1.17.11",
     "@react-navigation/bottom-tabs": "^6.0.5",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
+    "@tensorflow-models/pose-detection": "^2.0.0",
+    "@tensorflow/tfjs": "3.18.0",
+    "@tensorflow/tfjs-react-native": "^0.8.0",
     "expo": "~47.0.12",
     "expo-asset": "~8.7.0",
+    "expo-camera": "~13.1.0",
     "expo-constants": "~14.0.2",
+    "expo-file-system": "~15.1.1",
     "expo-font": "~11.0.1",
+    "expo-gl": "~12.0.1",
+    "expo-gl-cpp": "^11.4.0",
     "expo-linking": "~3.3.0",
+    "expo-screen-orientation": "~5.0.1",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
     "expo-system-ui": "~2.0.1",
@@ -29,9 +39,12 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
+    "react-native-fs": "^2.20.0",
     "react-native-safe-area-context": "4.4.1",
     "react-native-screens": "~3.18.0",
-    "react-native-web": "~0.18.9"
+    "react-native-svg": "13.4.0",
+    "react-native-web": "~0.18.9",
+    "expo-updates": "~0.15.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
